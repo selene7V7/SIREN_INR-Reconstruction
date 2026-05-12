@@ -44,8 +44,8 @@ results/       Reconstruction results and visualizations
 ##  Running the Project
 
 ```bash
-conda env create -f environment.yml
-python train_300.py
+conda env create -f env.yml
+python INR_FWI_300k.py
 ```
 
 ---
