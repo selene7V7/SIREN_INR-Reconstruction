@@ -6,7 +6,7 @@ This repository contains experimental studies on implicit neural representation 
 
 The project focuses on analyzing how different neural network configurations and acquisition settings affect reconstruction quality.
 
-![reconstruction](results/reconstruction_result.png)
+![reconstruction](SIREN-FWI-Study/results/reconstruction_result.png)
 
 ---
 
