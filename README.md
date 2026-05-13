@@ -1,32 +1,34 @@
-# INR-based Full Waveform Inversion for Acoustic Reconstruction
+# Experimental Study of INR-based Full Waveform Inversion
 
 ##  Overview
 
-This project explores the application of Implicit Neural Representation (INR) in Full Waveform Inversion (FWI) for acoustic image reconstruction.
+This repository contains experimental studies on implicit neural representation (INR) methods for full waveform inversion (FWI) reconstruction in acoustic imaging tasks.
 
-A neural-network-based continuous representation is used to reconstruct sound velocity distributions from simulated wavefield data, aiming to improve reconstruction quality and structural consistency in medical acoustic imaging.
+The project focuses on analyzing how different neural network configurations and acquisition settings affect reconstruction quality.
 
 ![reconstruction](results/reconstruction_result.png)
 
 ---
 
-##  Key Features
+##  Main Experiments
 
-- Implemented INR-based continuous acoustic field reconstruction
-- Applied SIREN-style neural representation for velocity modeling
-- Explored different network depths and hidden dimensions
-- Investigated the impact of transmitter/receiver configurations
-- Evaluated reconstruction quality using SSIM, PSNR, and RMSE
+- Comparison of different network depths
+- Comparison of hidden layer dimensions
+- Analysis of transmitter and receiver configurations
+- Reconstruction quality evaluation using:
+  - SSIM
+  - PSNR
+  - RMSE
 
 ---
 
-##  Tech Stack
+##  Tools & Frameworks
 
 - Python
 - PyTorch
+- Deepwave
 - NumPy
 - Matplotlib
-- Deepwave
 
 ---
 
@@ -41,22 +43,9 @@ results/       Reconstruction results and visualizations
 
 ---
 
-##  Running the Project
-
-```bash
-conda env create -f env.yml
-python INR_FWI_300k.py
-```
-
----
-
 ##  Experimental Results
 
-The experiments compare different:
-
-- Network depths
-- Hidden layer dimensions
-- Transmitter/receiver configurations
+The experiments show that increasing network depth and hidden dimensions can improve reconstruction quality up to a certain point, while excessively large architectures may lead to instability and overfitting.
 
 The best-performing configuration achieved:
 
@@ -72,12 +61,15 @@ The best-performing configuration achieved:
 
 - Full Waveform Inversion (FWI)
 - Implicit Neural Representation (INR)
-- Neural Fields
-- Computational Imaging
+- Medical Acoustic Imaging
 - Deep Learning Reconstruction
 
 ---
 
-##  Contact
+##  Running the Project
 
-GitHub: selene7V7
+```bash
+conda env create -f env.yml
+python train_300k.py
+```
+
